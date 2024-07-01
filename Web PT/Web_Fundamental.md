@@ -157,3 +157,35 @@ ___
 
     > Online shopping websites use cookies to store items in your shopping cart across different pages or visits.
 *********
+## Domain Name System 
+**DNS:-** DNS stands for Domain Name System. It is a fundamental technology used in the internet's infrastructure that translates domain names into IP addresses. Here’s a breakdown of its key components and functions:
+
+- **Domain Names:-** These are human-readable addresses used to access websites (e.g., example.com). They are easier to remember than IP addresses.
+
+- **IP Addresses:-** Every device connected to the internet is assigned a unique numerical label called an IP address (e.g., 192.0.2.1). IP addresses are used to identify and communicate with devices over the internet.
+
+- **DNS Server:-** DNS servers are like internet directories that maintain a database of domain names and their corresponding IP addresses. When you type a domain name into your web browser, your computer queries a DNS server to find the corresponding IP address.
+- **DNS Records:** These are entries within DNS databases that map domain names to IP addresses and provide other information about domain names, **such as** A (Address) Record, AAAA (IPv6 Address) Record, CNAME (Canonical Name) Record, MX (Mail Exchange) Record, TXT (Text) Record, NS (Name Server) Record, PTR (Pointer) Record etc..
+
+- **Caching:-** DNS servers and clients often cache DNS records to speed up future queries and reduce network traffic.
+- **Subdomains:-** Below the second-level domains, you can have additional levels of hierarchy known as subdomains. Subdomains allow for further organization and delegation within a domain. For example, in "blog.example.com," "blog" is a subdomain of "example.com".
+- **Hostnames:-** Hostnames are specific names assigned to individual devices or services within a domain or subdomain. For instance, in "www.example.com," "www" is the hostname.
+- **DNS Resolution Process:-** When you type a domain name (e.g., www.example.com) into your browser:
+
+  > Your computer first checks its local DNS cache to see if it already knows the IP address for that domain.
+  > 
+  > If not found locally, your computer sends a query to a DNS resolver, typically operated by your Internet Service Provider (ISP) or a third-party DNS provider.
+  > 
+  >The DNS resolver checks its own cache. If the IP address is not cached, the resolver queries other DNS servers up the hierarchy until it finds the authoritative DNS server for that domain.
+  >
+  >The authoritative DNS server stores the official record (DNS zone file) for the domain and returns the corresponding IP address to the resolver.
+  >
+  >The resolver then returns the IP address to your computer, which can now connect to the desired website.
+  
+**For Example**
+  <p align="center">
+    <img src="https://almablog-media.s3.ap-south-1.amazonaws.com/007_d5abbba112.png" alt="Image Description" />
+</p>
+
+[For More Detils about DNS](https://www.almabetter.com/bytes/articles/what-is-dns)
+---
