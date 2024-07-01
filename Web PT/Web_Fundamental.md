@@ -75,6 +75,85 @@
     <img src="https://www.oreilly.com/api/v2/epubs/9780596516680/files/httpatomoreillycomsourceoreillyimages2242227.png.jpg" alt="Image Description" />
 </p>
 
+----- 
 
+**HTTP Response:-** An HTTP response is a message sent by a server to a client (such as a web browser or an application) in response to an HTTP request. 
+- **Status Line:** The first line of an HTTP response is the status line, which includes: like- **HTTP Version, Status Code, Reason Phrase**
+- **Headers:-** These provide additional information about the server's response, such as: **Content-Type, Content-Length, Date, Cache-Control, Server, Set-Cookie, etc.**
+- **Blank Line:-** After the headers, there is a blank line that separates the headers from the optional message body. This line consists of only \r\n (carriage return followed by newline).
+- **Message Body:-** Optionally, an HTTP response may include a message body. The content and format of the body depend on the request and response headers. For example:
+  >For a GET request for an HTML page, the body would contain the HTML code.
 
+  >For a POST request expecting JSON, the body might contain JSON data.
+  
+**For Example**
 
+```
+HTTP/1.1 200 OK
+Content-Type: text/html
+Content-Length: 145
+Date: Wed, 28 Jun 2024 12:00:00 GMT
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Example Page</title>
+</head>
+<body>
+    <h1>Hello, World!</h1>
+    <p>This is an example response body.</p>
+</body>
+</html>
+```
+**Impotant**
+
+- **Host:-** Specifies the domain name of the server (mandatory in HTTP/1.1).
+
+- **User-Agent:-** Identifies the client making the request (e.g., browser name and version).
+
+- **Content-Type-:** Specifies the media type of the request body (e.g., application/json, application/x-www-form-urlencoded).
+
+- **Authorization:-** Contains credentials to authenticate the client with the server (e.g., tokens, API keys).
+
+- **Accept:-** Indicates the media types accepted by the client for the response (e.g., text/html, application/json).
+  
+- **Set-Cookie:-** Information to store which gets sent back to the web server on each request (see cookies task for more information).
+
+- **Cache-Control:-** How long to store the content of the response in the browser's cache before it requests it again.
+
+- **Content-Type:-** This tells the client what type of data is being returned, i.e., HTML, CSS, JavaScript, Images, PDF, Video, etc.
+
+- **Content-Encoding:-** What method has been used to compress the data to make it smaller when sending it over the internet.
+
+-------
+
+**HTTP Status Code:-** HTTP status codes are standard messages sent by a web server to a client's browser or application in response to a request. They tell the client if the request was successful, had an error, or needs additional action. These codes help in troubleshooting and understanding what happened during a web request.
+
+**They are classified into 5 classes :**
+
+- **1xx: Informational:–** Communicates transfer protocol-level information.
+- **2xx: Success–** Indicates that the client’s request was accepted successfully.
+- **3xx: Redirection:–** Indicates that the client must take some additional action in order to complete their request.
+- **4xx: Client Error:–** This category of error status codes points the finger at clients.
+- **5xx: Server Error:–** The server takes responsibility for these error status codes.
+
+  
+<p align="center">
+    <img src="https://miro.medium.com/v2/resize:fit:720/format:webp/1*iBdspXxR_jjd-Yn7IDm43g.png" alt="Image Description" />
+</p>
+  
+___
+
+**Cookies:-** Cookies are small pieces of data stored on a user's device by a web browser while the user is browsing a website. They are used to remember stateful information or to track the user's browsing activity. 
+
+ **There are two types of Cookies**
+- **Session Cookies:-** Temporary cookies that expire when the user closes the browser. They are typically used for session management.
+
+- **Persistent Cookies:-** Cookies with an expiration date set by the website. They remain on the user's device until they expire or are manually deleted.
+  
+  **For Example:-**
+
+  > When you log into a website and choose "Remember Me", a persistent cookie might store your login credentials so you don't have to log in again each time you visit.
+
+    > Online shopping websites use cookies to store items in your shopping cart across different pages or visits.
+*********
