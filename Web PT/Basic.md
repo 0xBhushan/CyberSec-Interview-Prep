@@ -64,4 +64,15 @@
 | **Selenium**               | While primarily an automation tool for web applications, Selenium can be used to automate security testing by simulating user actions. |
 | **Fuzzing Tools (e.g., Peach Fuzzer, AFL)** | Tools that automate the process of sending unexpected or random data to applications to discover vulnerabilities. |
 
+## 6.  Vulnerability Assessment vs. Penetration Testing
+
+### Here are some difference between Vulnerability Assessment and Penetration Testing:
+
+| Aspect                      | Vulnerability Assessment                                   | Penetration Testing                                  |
+|-----------------------------|----------------------------------------------------------|-----------------------------------------------------|
+| **Purpose**                | Identify and prioritize vulnerabilities                   | Exploit vulnerabilities to assess real-world impact |
+| **Approach**              | Passive scanning and analysis                             | Active testing and simulation of attacks            |
+| **Tools Used**            | Automated scanners (e.g., Nessus, OpenVAS)              | Exploit frameworks (e.g., Metasploit, Burp Suite)  |
+| **Depth of Testing**      | Broad coverage with a focus on known vulnerabilities     | In-depth testing targeting specific vulnerabilities   |
+| **Outcome**               | Vulnerability report with recommendations                 | Detailed report on exploitation success and risk assessment |
 
